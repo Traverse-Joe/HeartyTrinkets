@@ -54,7 +54,7 @@ public class HeartyTrinkets implements ModInitializer {
             HTConfig.addEntrytoMap("red", "hostile", 0.05);
             HTConfig.addEntrytoMap("orange", "boss", 1.0);
             HTConfig.addEntrytoMap("green", "dragon", 1.0);
-            HTConfig.addEntrytoMap("blue", "minecraft:evoker", 1.0);
+            HTConfig.addEntrytoMap("blue", "minecraft:warden", 1.0);
             String json = gson.toJson(HTConfig, HeartyTrinketsConfig.class);
             FileWriter writer = new FileWriter(file);
             writer.write(json);

@@ -9,29 +9,22 @@ import dev.emi.trinkets.api.Trinket;
 import dev.emi.trinkets.api.TrinketsApi;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
-import net.minecraft.client.Keyboard;
 import net.minecraft.client.MinecraftClient;
-import net.minecraft.client.gui.screen.Screen;
-import net.minecraft.client.gui.screen.option.KeybindsScreen;
-import net.minecraft.client.input.Input;
 import net.minecraft.client.item.TooltipContext;
-import net.minecraft.client.util.InputUtil;
 import net.minecraft.entity.LivingEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.entity.player.PlayerInventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NbtCompound;
 import net.minecraft.screen.NamedScreenHandlerFactory;
-import net.minecraft.screen.PlayerScreenHandler;
 import net.minecraft.screen.ScreenHandler;
-import net.minecraft.text.KeybindText;
+import net.minecraft.text.LiteralTextContent;
 import net.minecraft.text.Style;
 import net.minecraft.text.Text;
-import net.minecraft.text.TranslatableText;
+import net.minecraft.text.TranslatableTextContent;
 import net.minecraft.util.*;
 import net.minecraft.world.World;
 import org.jetbrains.annotations.Nullable;
-import org.spongepowered.asm.util.Locals;
 
 import java.util.List;
 
@@ -72,7 +65,7 @@ public class ItemCanisterBelt extends BaseItem implements NamedScreenHandlerFact
     @Override
     public void appendTooltip(ItemStack stack, @Nullable World world, List<Text> tooltip, TooltipContext context) {
         super.appendTooltip(stack, world, tooltip, context);
-        tooltip.add(new TranslatableText(Util.createTranslationKey("tooltip", new Identifier(HeartyTrinkets.MOD_ID, "canisterbelt")), MinecraftClient.getInstance().options.sneakKey.getBoundKeyLocalizedText().getString()).setStyle(Style.EMPTY.withFormatting(Formatting.GOLD)));
+        tooltip.add(Text.translatable(Util.createTranslationKey("tooltip", new Identifier(HeartyTrinkets.MOD_ID, "canisterbelt")), MinecraftClient.getInstance().options.sneakKey.getBoundKeyLocalizedText()).setStyle(Style.EMPTY.withFormatting(Formatting.GOLD)));
     }
 
     @Override
@@ -89,7 +82,7 @@ public class ItemCanisterBelt extends BaseItem implements NamedScreenHandlerFact
 
     @Override
     public Text getDisplayName() {
-        return new TranslatableText(this.getTranslationKey());
+        return Text.translatable(this.getTranslationKey());
     }
 
     @Nullable
