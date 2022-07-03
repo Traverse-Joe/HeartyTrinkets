@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " G ",
+    "LHL",
+    " G "
+  ],
+  "key": {
+    "L": {
+      "item": "minecraft:leather"
+    },
+    "H": {
+      "tag": "c:hearts"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "heartytrinkets:canister_belt"
+  }
+}

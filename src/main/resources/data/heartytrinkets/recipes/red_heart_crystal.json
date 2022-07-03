@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heartytrinkets:red_heart"
+    },
+    {
+      "tag": "c:wither_bones"
+    },
+    {
+      "item": "heartytrinkets:amethyst_apple"
+    }
+  ],
+  "result": {
+    "item": "heartytrinkets:red_heart_crystal"
+  }
+}

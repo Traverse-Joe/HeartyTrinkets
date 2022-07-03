@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "heartytrinkets:orange_heart_crystal"
+  },
+  "addition": {
+    "item": "heartytrinkets:red_heart_canister"
+  },
+  "result": {
+    "item": "heartytrinkets:orange_heart_canister"
+  }
+}

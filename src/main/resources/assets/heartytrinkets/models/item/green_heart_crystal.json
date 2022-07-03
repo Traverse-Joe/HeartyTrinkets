@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures" : {
+    "layer0" : "heartytrinkets:items/green_heart_crystal"
+  }
+}

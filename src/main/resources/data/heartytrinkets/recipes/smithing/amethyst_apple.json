@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "minecraft:apple"
+  },
+  "addition": {
+    "item": "minecraft:amethyst_block"
+  },
+  "result": {
+    "item": "heartytrinkets:amethyst_apple"
+  }
+}

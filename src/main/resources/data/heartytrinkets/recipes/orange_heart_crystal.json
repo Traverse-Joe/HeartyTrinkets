@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "heartytrinkets:orange_heart"
+    },
+    {
+      "item": "minecraft:enchanted_golden_apple"
+    },
+    {
+      "item": "minecraft:shroomlight"
+    }
+  ],
+  "result": {
+    "item": "heartytrinkets:orange_heart_crystal"
+  }
+}

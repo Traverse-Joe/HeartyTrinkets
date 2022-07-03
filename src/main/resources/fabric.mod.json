@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "id": "heartytrinkets",
+  "version": "${version}",
+  "name": "Hearty Trinkets",
+  "description": "This Mod Brings Back the Old Tinkers Heart Canisters in a new Way. Place them in your belt in a Trinket Slot",
+  "authors": [
+    "Traverse_Joe"
+  ],
+  "icon": "assets/heartytrinkets/icon.png",
+  "contact": {
+    "homepage": "https://twitter.com/Traverse_Joe"
+  },
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.traverse.heartytrinkets.common.HeartyTrinkets"
+    ],
+    "client": [
+      "com.traverse.heartytrinkets.client.ClientHeartyTrinkets"
+    ],
+    "modmenu": [
+      "com.traverse.heartytrinkets.common.config.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "heartytrinkets.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.12.12",
+    "fabric": "*",
+    "trinkets": ">=3.1.0",
+    "minecraft": "1.18.2"
+  }
+}
